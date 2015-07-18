@@ -13,6 +13,7 @@ import com.gateside.autotesting.Gat.util.ParameterChecker;
 import com.gateside.autotesting.Gat.util.StepValuePool;
 import com.gateside.autotesting.Lib.common.ClassReflector;
 import com.gateside.autotesting.Lib.common.SimpleLogger;
+import com.gateside.autotesting.Lib.httpclientService.HttpClientHelper;
 import com.gateside.autotesting.Lib.httpunitService.HttpUnitHelper;
 import com.meterware.httpunit.HttpUnitOptions;
 

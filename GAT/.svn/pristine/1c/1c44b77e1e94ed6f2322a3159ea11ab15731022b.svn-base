@@ -1,9 +1,0 @@
-package com.baidu.gameqa.Gat.uia.webautomation;
-
-public class WebControl {
-
-	public WebControl() {
-		// TODO Auto-generated constructor stub
-	}
-
-}

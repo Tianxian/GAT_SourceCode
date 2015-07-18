@@ -1,6 +1,0 @@
-package com.baidu.gameqa.Gat.dataobject.stepparameter;
-
-public class InterfaceMulitStepParameter extends MulitStepsParameter
-{
-
-}

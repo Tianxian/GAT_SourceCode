@@ -1,5 +1,0 @@
-package com.baidu.gameqa.Gat.executor;
-
-public interface IExecutor {
-
-}

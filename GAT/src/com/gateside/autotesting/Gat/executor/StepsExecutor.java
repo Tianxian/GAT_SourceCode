@@ -28,7 +28,6 @@ public class StepsExecutor extends CaseExecutor
 		 preCleanup();
 		 setGlobalConfig();
 		 exectuePreStep();
-		
 	}
 	
 	@Override

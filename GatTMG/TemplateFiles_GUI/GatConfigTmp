@@ -1,0 +1,8 @@
+rootDir={ROOTDIR}
+domainName=http://www.youxi.baidu.com/
+urlParametersSignal=$
+stepMethodJarFiles=IATStepGroup.jar
+descColumnSignal=#
+webcontrolldefaultpackage=com.baidu.gameqa.Gat.uia.webautomation.webcontrols.
+screenpicturedir= test-output\\ScreenPictures
+autoprojectfolder=InterfaceAutomation

@@ -4,8 +4,8 @@
 <property name="src.dir" value="${basedir}\\src"/>
 <property name="build.dir" value="${basedir}\\build"/>
 <property name="dest.dir" value="${basedir}\\dest"/>
-<property name="lib.dir" value="D:\\Work\\QASvn\\ServerSide_InterfaceTest\\BigEyesVideo\\Api3.0\\MobilePlatformQA.AutomationTesting\\Libs"/>
-<property name="debug.dir" value="D:\\Work\\QASvn\\ServerSide_InterfaceTest\\BigEyesVideo\\Api3.0\\MobilePlatformQA.AutomationTesting\\Libs"/>
+<property name="lib.dir" value="D:\\Work\\QASvn\\ServerSide_InterfaceTest\\BigEyesVideo\\Api2.0\\MobilePlatformQA.AutomationTesting\\Libs"/>
+<property name="debug.dir" value="D:\\Work\\QASvn\\ServerSide_InterfaceTest\\BigEyesVideo\\Api2.0\\MobilePlatformQA.AutomationTesting\\Libs"/>
 
 <path id="classpath">  
 	<fileset dir="${lib.dir}">  <include name="**/*.jar" />  

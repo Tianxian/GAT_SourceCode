@@ -1,6 +1,0 @@
-package com.baidu.gameqa.Gat.manager;
-
-public class SingleInterfaceCaseManager implements ITestCaseManager
-{
-
-}

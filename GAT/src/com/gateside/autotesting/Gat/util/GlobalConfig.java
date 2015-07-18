@@ -120,7 +120,14 @@ public static String getDomainName() {
 
 public static String getStepMethodJarPath()
 {
-	 return getRootDir()+"Libs"+getSlash()+ConfigReader.GetValue("gatConfig.properties","stepMethodJarFiles");
+	if(ConfigReader.GetValue("gatConfig.properties","stepMethodJarFiles")=="")
+	{
+		return null;
+	}
+	else 
+	{
+		return getRootDir()+"Libs"+getSlash()+ConfigReader.GetValue("gatConfig.properties","stepMethodJarFiles");	
+	}
 }
 
 public static String getDescColumnSignal()

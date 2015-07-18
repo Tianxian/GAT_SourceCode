@@ -1,0 +1,8 @@
+rootDir={ROOTDIR}
+domainName=http://www.wanmei.com/
+urlParametersSignal=$
+stepMethodJarFiles=IATStepGroup.jar
+descColumnSignal=#
+webcontrolldefaultpackage=com.gateside.Gat.uia.webautomation.webcontrols.
+screenpicturedir= test-output\\ScreenPictures
+autoprojectfolder=InterfaceAutomation

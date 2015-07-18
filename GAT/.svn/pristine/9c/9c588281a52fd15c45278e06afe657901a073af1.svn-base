@@ -1,9 +1,0 @@
-package com.baidu.gameqa.Gat.dataobject.testcase;
-
-public enum EnumSetupType
-{
-	SQL,
-	DBID,
-	Custom
-
-}

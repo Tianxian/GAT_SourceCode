@@ -1,9 +1,0 @@
-package com.baidu.gameqa.Gat.uia.webautomation;
-
-public class WebBrowser {
-
-	public WebBrowser() {
-		// TODO Auto-generated constructor stub
-	}
-
-}

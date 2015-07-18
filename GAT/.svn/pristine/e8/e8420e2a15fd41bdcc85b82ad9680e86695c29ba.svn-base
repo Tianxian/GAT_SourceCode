@@ -1,5 +1,0 @@
-package com.baidu.gameqa.Gat.dataobject;
-
-public abstract class TestCase {
-
-}

@@ -1,9 +1,0 @@
-package com.baidu.gameqa.Gat.uia.webautomation;
-
-public class WebPage {
-
-	public WebPage() {
-		// TODO Auto-generated constructor stub
-	}
-
-}

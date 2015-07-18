@@ -16,9 +16,9 @@ import com.gateside.autotesting.Lib.xmlService.XMLSerializer;
 public class StepParameterDataObjectTest 
 {
   @Test
-  public void InterfaceStepParameterObjectTest()
+  public void interfaceStepParameterObjectTest()
   {
-//	  InterfaceStepParameter sttepParameter=new InterfaceStepParameter();
+	  InterfaceStepParameter sttepParameter=new InterfaceStepParameter();
 //	  sttepParameter.CommandText="fdsfdsfsd";
 //	  sttepParameter.ConnectiongString="fdsfds";
 //	  sttepParameter.ID="fdsfsd";
@@ -29,20 +29,20 @@ public class StepParameterDataObjectTest
 //	  parameter.value="zhangtiande";
 ////	  sttepParameter.parameters.add(parameter);
 //	  gparameter.parameters.add(parameter);
-//	  XMLSerializer.ObjectToXML(gparameter,"d:\\stepparameter.xml");
-//      String xmlString=XMLParser.getElementByID("d:\\stepparameter.xml", "AllStepParameters/StepParameter", "ID", "Test01").asXML();
-//  sttepParameter=(InterfaceStepParameter)XMLSerializer.XMLToObject(sttepParameter, xmlString);
+//	  XMLSerializer.ObjectToXML(sttepParameter,"d:\\stepparameter.xml");
+      String xmlString=XMLParser.getElementByID("d:\\stepparameter.xml", "AllStepParameters/StepParameter", "ID", "Test01").asXML();
+  sttepParameter=(InterfaceStepParameter)XMLSerializer.XMLToObject(sttepParameter, xmlString);
 //  System.out.print(sttepParameter.CommandText);
 //  System.out.print(sttepParameter.getValue("user"));
 	  
   }
   
-  @Test
-  public void globalParameterTest() throws Exception
-  {
-	 GlobalConfig.setStepsParameterFilePath("InterfaceAutomation\\DataFiles\\Xmls\\RegisterwithInviteCodeParameters.xml");
-	 InterfaceStepsParameterManager manager=new InterfaceStepsParameterManager();
-	 InterfaceStepParameter parameter= (InterfaceStepParameter)manager.getItem("Test01");
-	 System.out.println(parameter.globalParameter.parameters.size());
-  }
+//  @Test
+//  public void globalParameterTest() throws Exception
+//  {
+//	 GlobalConfig.setStepsParameterFilePath("InterfaceAutomation\\DataFiles\\Xmls\\RegisterwithInviteCodeParameters.xml");
+//	 InterfaceStepsParameterManager manager=new InterfaceStepsParameterManager();
+//	 InterfaceStepParameter parameter= (InterfaceStepParameter)manager.getItem("Test01");
+//	 System.out.println(parameter.globalParameter.parameters.size());
+//  }
 }

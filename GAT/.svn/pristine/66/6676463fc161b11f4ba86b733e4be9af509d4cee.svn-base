@@ -1,8 +1,0 @@
-package com.baidu.gameqa.Gat.dataobject;
-
-public enum EnumObjectManager 
-{
-    ISingleStepCaseManager,
-    IMulitStepsCaseManager,
-    IMulitStepParameterManager
-}

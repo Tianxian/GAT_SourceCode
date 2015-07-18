@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="GB2312" ?>
+<project name="IATStepProject" default="regression" basedir=".">
+	
+<property name="src.dir" value="${basedir}\\src"/>
+<property name="build.dir" value="${basedir}\\build"/>
+<property name="dest.dir" value="${basedir}\\dest"/>
+<property name="lib.dir" value="{LIBPATH}"/>
+<property name="testng.output.dir" value="${basedir}\\test-output"/>
+<property name="testng.file" value="testng.xml"/>
+
+<taskdef resource="testngtasks" classpath="${lib.dir}\\gameqaLib.jar"/>
+<path id="classpath">  
+	<fileset dir="${lib.dir}">  <include name="**/*.jar" />  
+	</fileset>
+	<pathelement location="${build.dir}"/>
+ </path>  
+	
+<target name="clean">
+    <delete dir="${dest.dir}" failonerror="false"/>
+    <delete dir="${build.dir}" failonerror="false"/>
+</target>
+
+<target name="prepare">
+    <mkdir dir="${dest.dir}" description=".jar file target dir"/>
+    <mkdir dir="${build.dir}" description=".class file target dir"/>
+    <copy todir="${dest.dir}" overwrite="true" failonerror="false" includeEmptyDirs="true">
+	    <fileset dir="${basedir}" includes="**/*.properties"/>
+    	<fileset dir="${lib.dir}" includes="**/*.jar"/>
+    </copy>
+</target>
+	
+<target name="compile" depends="clean,prepare" description="compile .java file">
+    <javac srcdir="${src.dir}" destdir="${build.dir}" classpathref="classpath">
+    </javac>
+</target>
+<!-- target name="build" depends="compile" description="build file as .jar file">
+	<pathconvert property="mf.classpath" pathsep=" ">
+	     <path refid="classpath" />
+	     <flattenmapper />
+	</pathconvert>
+     <jar jarfile="${dest.dir}\\IATTestProject.jar" basedir="${build.dir}" includes="**/*.*">
+     	 <manifest>
+     	         <attribute name="Class-Path" value="${mf.classpath} "/>
+     	</manifest>
+     </jar>
+</target -->
+	
+	<target name="regression" depends="compile">
+	        <testng outputdir="${testng.output.dir}" classpathref="classpath" haltonfailure="true" usedefaultlisteners="true">
+	            <xmlfileset dir="${basedir}" includes="${testng.file}"/>
+	        </testng>
+	    </target>
+</project>

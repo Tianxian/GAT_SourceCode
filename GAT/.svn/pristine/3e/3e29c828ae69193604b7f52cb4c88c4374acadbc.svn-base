@@ -1,5 +1,0 @@
-package com.baidu.gameqa.Gat.manager;
-
-public interface IManager {
-
-}

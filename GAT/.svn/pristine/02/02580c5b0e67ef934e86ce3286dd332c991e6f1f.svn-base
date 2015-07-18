@@ -1,8 +1,0 @@
-package com.baidu.gameqa.Gat.dataobject.testcase;
-
-public enum EnumAssertType 
-{
-   Equal,
-   Contains,
-   Custom
-}

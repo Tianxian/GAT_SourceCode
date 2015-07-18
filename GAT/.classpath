@@ -3,8 +3,7 @@
 	<classpathentry kind="src" path="src"/>
 	<classpathentry kind="con" path="org.testng.TESTNG_CONTAINER"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
-	<classpathentry kind="lib" path="D:/Work/QASvn/InterfaceTest/Code/MobilePlatformQA.AutomationTesting/Libs/gat.jar"/>
-	<classpathentry kind="lib" path="D:/Work/QASvn/InterfaceTest/Code/MobilePlatformQA.AutomationTesting/Libs/gatesideLib.jar"/>
 	<classpathentry kind="lib" path="D:/Work/QASvn/InterfaceTest/Code/MobilePlatformQA.AutomationTesting/Libs/selenium-java-2.40.0.jar"/>
+	<classpathentry kind="lib" path="D:/Work/QASvn/InterfaceTest/Code/MobilePlatformQA.AutomationTesting/Libs/gatesideLib.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
